@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        color: white;
+    }
+
+    .parent{
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .parent1{
+        background-color: orange;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+
+    }
+    .parent2{
+        background-color:  rgb(20, 145, 134);
+        /* border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; */
+    }
+    .parent3{
+        background-color: rgb(9, 105, 99);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .child{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 2rem;
+        height: 20%;
+    }
+    .child2{
+        font-size:xx-large;
+        font-weight: bold;
+    }
+    .btn1{
+        background-color: aliceblue;
+        padding: 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 50px;
+        color:orange ;
+    }
+    .btn2{
+        background-color: aliceblue;
+        padding: 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 50px;
+        color:rgb(20, 145, 134); ;
+    }
+    .btn3{
+        background-color: aliceblue;
+        padding: 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 50px;
+        color:rgb(9, 105, 99);
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="parent parent1">
+            <div class="child child1"></div>
+            <div class="child child2">SEDAN</div>
+            <div class="child child3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, rerum modi ad maxime magni, cupiditate minima quo doloribus, nobis sint reiciendis sequi consequuntur autem corrupti.</div>
+            <div class="child child4"><button class="btn1"> Learn more</button></div>
+        </div>
+
+        <div class="parent parent2">
+            <div class="child child1"></div>
+            <div class="child child2">SUVS</div>
+            <div class="child child3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, rerum modi ad maxime magni, cupiditate minima quo doloribus, nobis sint reiciendis sequi consequuntur autem corrupti.</div>
+            <div class="child child4"><button class="btn2"> Learn more</button></div>
+        </div>
+
+        <div class="parent parent3">
+            <div class="child child1"></div>
+            <div class="child child2">LUXURY</div>
+            <div class="child child3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, rerum modi ad maxime magni, cupiditate minima quo doloribus, nobis sint reiciendis sequi consequuntur autem corrupti.</div>
+            <div class="child child4"><button class="btn3"> Learn more</button></div>
+        </div>
+    </div>
+</body>
+</html>
